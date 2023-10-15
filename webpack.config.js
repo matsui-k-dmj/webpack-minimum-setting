@@ -7,6 +7,11 @@ const config = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        // 画像やフォントファイル
+        test: /\.svg$/,
+        type: 'asset/inline',
+      },
     ],
   },
 };
