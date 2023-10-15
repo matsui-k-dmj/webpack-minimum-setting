@@ -1,0 +1,7 @@
+#countUpButton {
+  color: white;
+  background-color: coral;
+  border: 2px solid coral;
+  border-radius: 10px;
+  cursor: pointer;
+}

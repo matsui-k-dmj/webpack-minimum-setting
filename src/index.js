@@ -1,3 +1,4 @@
+import './style.css';
 import { Counter } from './math';
 
 console.log('Hello World!');
