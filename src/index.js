@@ -1,7 +1,11 @@
 import './style.css';
+import style from './style.module.css';
 import { Counter } from './math';
 
 console.log('Hello World!');
+
+console.log(style);
+document.getElementById('double').className = style['double'];
 
 let counter = new Counter();
 
