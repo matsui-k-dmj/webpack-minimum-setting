@@ -1,10 +1,20 @@
 (() => {
   'use strict';
   console.log('Hello World!');
-  let e = 0;
+  let t = new (class {
+    constructor() {
+      this.count = 0;
+    }
+    up() {
+      this.count++;
+    }
+    getDouble() {
+      return 2 * this.count;
+    }
+  })();
   document.getElementById('countUpButton').addEventListener('click', () => {
-    e++,
-      (document.getElementById('count').innerText = e),
-      (document.getElementById('double').innerText = 2 * e);
+    t.up(),
+      (document.getElementById('count').innerText = t.count),
+      (document.getElementById('double').innerText = t.getDouble());
   });
 })();

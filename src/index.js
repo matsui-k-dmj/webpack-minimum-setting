@@ -1,11 +1,11 @@
-import { double } from './math';
+import { Counter } from './math';
 
 console.log('Hello World!');
 
-let count = 0;
+let counter = new Counter();
 
 document.getElementById('countUpButton').addEventListener('click', () => {
-  count++;
-  document.getElementById('count').innerText = count;
-  document.getElementById('double').innerText = double(count);
+  counter.up();
+  document.getElementById('count').innerText = counter.count;
+  document.getElementById('double').innerText = counter.getDouble();
 });
